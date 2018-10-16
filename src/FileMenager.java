@@ -1,4 +1,5 @@
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -36,12 +37,9 @@ public class FileMenager {
 
             }
 
-
-
-
             scanner.close();
-        }catch (Exception ex){
-            ex.printStackTrace();
+        }catch (FileNotFoundException ex){
+            System.out.println("Nie znaleziono pliku "+fileName);
         }
 
         return listProblems;

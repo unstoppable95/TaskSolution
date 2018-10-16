@@ -1,32 +1,26 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Problem {
 
-    private ArrayList<Job> jobList = new ArrayList<>();
-    private int sumP=0;
+    private List<Job> jobList = new ArrayList<>();
+
     private int numberOfJobs;
 
-
-    public Problem(int x){
+    public Problem(int x)
+    {
         this.numberOfJobs=x;
-    }
-
-    public int calculateSumP(){
-        for(Job j: jobList){
-            sumP+=j.getP();
-        }
-        return sumP;
     }
 
     public int getNumberOfJobs() {
         return numberOfJobs;
     }
 
-    public void setJobList(ArrayList<Job> jobList) {
+    public void setJobList(List<Job> jobList) {
         this.jobList = jobList;
     }
 
-    public ArrayList<Job> getJobList() {
+    public List<Job> getJobList() {
         return jobList;
     }
 }

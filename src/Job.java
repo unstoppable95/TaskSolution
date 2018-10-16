@@ -1,13 +1,13 @@
 public class Job {
 
     private int p; //time
-    private int b; //punishment for earlier execution
-    private int c; //punishment for later execution
+    private int a; //punishment for earlier execution
+    private int b; //punishment for later execution
 
-    public Job(int p,int b,int c){
+    public Job(int p,int a,int b){
         this.p=p;
+        this.a=a;
         this.b=b;
-        this.c=c;
     }
 
     public int getP() {
@@ -18,11 +18,11 @@ public class Job {
         return b;
     }
 
-    public int getC() {
-        return c;
+    public int getA() {
+        return a;
     }
 
     public String toString(){
-        return "Job: P="+getP() +" B=" +getB() +" C="+ getC();
+        return "Job: P="+getP() +" B=" +getB() +" C="+ getA();
     }
 }
