@@ -15,7 +15,7 @@ public class FileMenager {
 
         ArrayList<Problem> listProblems=new ArrayList<>();
         try{
-            File file =new File(fileName);
+            File file =new File("ProblemFiles/"+fileName);
             Scanner scanner = new Scanner(file);
             int numOfProblems = Integer.parseInt(scanner.nextLine().replace(" ", ""));
 

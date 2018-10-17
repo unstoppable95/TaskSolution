@@ -26,28 +26,32 @@ public class ProblemMenager {
 
         for (Problem p : problemList) {
             System.out.println("Uszeregowanie dla k=" + problemList.indexOf(p));
-            ArrayList <Instance> listOfInstance = new ArrayList<>();
+            //ArrayList <Instance> listOfInstance = new ArrayList<>();
+            Instance best = new Instance(p,h);
             for (int i=0;i<1000000;i++) {
                 Instance ix = new Instance(p, h);
-                listOfInstance.add(ix);
+                //listOfInstance.add(ix);
+                if (ix.getGoalFunction()<best.getGoalFunction()){
+                    best=ix;
+                }
             }
-            InstanceCompare comparator= new InstanceCompare();
-            Collections.sort(listOfInstance, comparator);
-
-            Instance best = listOfInstance.get(0);
+//            InstanceCompare comparator= new InstanceCompare();
+//            Collections.sort(listOfInstance, comparator);
+//
+//            Instance best = listOfInstance.get(0);
             System.out.println(best);
 
         }
     }
 
 
-    class InstanceCompare implements Comparator<Instance> {
+/*    class InstanceCompare implements Comparator<Instance> {
         public int compare(Instance a, Instance b){
             if (a.getGoalFunction()< b.getGoalFunction()) return -1;
             if (a.getGoalFunction()> b.getGoalFunction()) return 1;
             else return 0;
         }
-    }
+    }*/
 
 
 }
