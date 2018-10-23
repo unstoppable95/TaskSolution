@@ -1,17 +1,12 @@
-import java.io.File;
-import java.io.FileNotFoundException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FileMenager {
 
-    private String fileName;
 
-    public FileMenager(String name){
-        this.fileName=name;
-    }
 
-    public ArrayList<Problem> loadData(){
+    public ArrayList<Problem> loadData(String fileName){
 
         ArrayList<Problem> listProblems=new ArrayList<>();
         try{
@@ -44,5 +39,37 @@ public class FileMenager {
 
         return listProblems;
     }
+
+
+    public void saveInstance(String n,String k,String h,int F,Instance b,String r){
+        String nameInstance="Results/sch"+n+"_"+k+"_"+h+".txt";
+
+        try {
+            File file = new File(nameInstance);
+            file.createNewFile();
+
+            BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+            writer.write(h);
+            writer.newLine();
+            writer.write(String.valueOf(F));
+            writer.newLine();
+            writer.write(String.valueOf(n));
+            writer.newLine();
+            writer.write(String.valueOf(r));
+            writer.newLine();
+
+            for (int i =1; i<b.getMyProblem().getJobList().size()+1 ;i++){
+                writer.write(b.getMyProblem().getJobList().get(i-1).toString());
+                writer.newLine();
+            }
+
+            writer.flush();
+            writer.close();
+
+        }
+        catch(IOException e){}
+
+    }
+
 
 }

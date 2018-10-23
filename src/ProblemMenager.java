@@ -5,12 +5,11 @@ import java.util.Comparator;
 public class ProblemMenager {
 
     private ArrayList<Problem> problemList = new ArrayList<>();
-
+    private FileMenager menager = new FileMenager();
 
 
     public void readFromFile(String fileName){
-        FileMenager menager = new FileMenager(fileName);
-        problemList= menager.loadData();
+        problemList= menager.loadData(fileName);
         System.out.println("Dane dla pliku: " +fileName);
 /*        for (Problem p : problemList){
            System.out.println("Problem w pliku "+fileName +" nr: " + problemList.indexOf(p));
@@ -20,6 +19,7 @@ public class ProblemMenager {
             System.out.println("Liczba zadan " + p.getNumberOfJobs());
             System.out.println();
         }*/
+
     }
 
     public void generateSchedule (double h){
@@ -28,8 +28,9 @@ public class ProblemMenager {
             System.out.println("Uszeregowanie dla k=" + problemList.indexOf(p));
             //ArrayList <Instance> listOfInstance = new ArrayList<>();
             Instance best = new Instance(p,h);
+            Instance ix ;
             for (int i=0;i<1000000;i++) {
-                Instance ix = new Instance(p, h);
+                ix = new Instance(p, h);
                 //listOfInstance.add(ix);
                 if (ix.getGoalFunction()<best.getGoalFunction()){
                     best=ix;
@@ -40,7 +41,7 @@ public class ProblemMenager {
 //
 //            Instance best = listOfInstance.get(0);
             System.out.println(best);
-
+            menager.saveInstance(String.valueOf(p.getNumberOfJobs()),String.valueOf(problemList.indexOf(p)+1),String.valueOf(Math.round(h*10)),(int)best.getGoalFunction(),best,"5");
         }
     }
 

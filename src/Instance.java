@@ -18,6 +18,10 @@ public class Instance {
         this.goalFunction=calculateGoalFunction();
     }
 
+    public Problem getMyProblem() {
+        return myProblem;
+    }
+
     private Problem generateSchedule(Problem p){
         List<Job> newJobList =p.getJobList();
         Collections.shuffle(newJobList);

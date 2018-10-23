@@ -23,6 +23,6 @@ public class Job {
     }
 
     public String toString(){
-        return "Job: P="+getP() +" B=" +getB() +" C="+ getA();
+        return getP() +"\t" +getA() +"\t"+ getB();
     }
 }
