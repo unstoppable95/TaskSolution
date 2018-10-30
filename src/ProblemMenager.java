@@ -13,10 +13,12 @@ public class ProblemMenager {
     public void generateSchedulesForFile (){
         for (Problem p : problemList) {
             System.out.println("Uszeregowanie dla k=" + (problemList.indexOf(p)+1));
-//          long startTime = System.currentTimeMillis();
+            //long startTime = System.currentTimeMillis();
+            long startTime = System.nanoTime();
             p.generateSchedule();
-//          long estimatedTime = System.currentTimeMillis() - startTime;
-//          System.out.println(estimatedTime + " seconds");
+            //long estimatedTime = System.currentTimeMillis() - startTime;
+            long estimatedTime = System.nanoTime() - startTime;
+            System.out.println(estimatedTime*0.000000001 + " seconds");
             System.out.println(p);
             meneger.saveInstance(String.valueOf(p.getNumberOfJobs()),String.valueOf(problemList.indexOf(p)+1),String.valueOf(Math.round(p.getH()*10)),(int)p.getGoalFunction(),p,String.valueOf(p.getR()));
         }

@@ -32,6 +32,14 @@ public  class FileMenager {
 
 
     public  void saveInstance(String n,String k,String h,int F,Problem b,String r){
+        try{
+            File dir = new java.io.File("Results");
+            dir.mkdir();
+        }
+        catch (Exception ex){
+            ex.printStackTrace();
+        }
+
         String nameInstance="Results/sch"+n+"_"+k+"_"+h+".txt";
         try {
             File file = new File(nameInstance);
