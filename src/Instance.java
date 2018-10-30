@@ -32,7 +32,7 @@ public class Instance {
         List<Job> newJobList = myProblem.getJobList();
         InstanceCompare sort = new InstanceCompare();
         Collections.sort(newJobList, sort);
-        this.r=5;
+        this.r=0;
         calculateGoalFunction(r);
         myProblem.setJobList(newJobList);
     }
