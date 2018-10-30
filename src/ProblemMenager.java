@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 
 public class ProblemMenager {
 
@@ -8,30 +6,19 @@ public class ProblemMenager {
     private FileMenager meneger = new FileMenager();
 
 
-    public void readFromFile(String fileName){
-        problemList= meneger.loadProblemData(fileName);
-        //System.out.println("Dane dla pliku: " +fileName);
+    public void readFromFile(String fileName,double h){
+        problemList= meneger.loadProblemData(fileName,h);
     }
 
-    public void generateScheduleForFile (double h){
-
+    public void generateSchedulesForFile (){
         for (Problem p : problemList) {
             System.out.println("Uszeregowanie dla k=" + (problemList.indexOf(p)+1));
-            Instance myInstance = new Instance(p,h);
-            myInstance.generateSchedule();
-            System.out.println(myInstance);
-            meneger.saveInstance(String.valueOf(p.getNumberOfJobs()),String.valueOf(problemList.indexOf(p)+1),String.valueOf(Math.round(h*10)),(int)myInstance.getGoalFunction(),myInstance,String.valueOf(myInstance.getR()));
+//          long startTime = System.currentTimeMillis();
+            p.generateSchedule();
+//          long estimatedTime = System.currentTimeMillis() - startTime;
+//          System.out.println(estimatedTime + " seconds");
+            System.out.println(p);
+            meneger.saveInstance(String.valueOf(p.getNumberOfJobs()),String.valueOf(problemList.indexOf(p)+1),String.valueOf(Math.round(p.getH()*10)),(int)p.getGoalFunction(),p,String.valueOf(p.getR()));
         }
     }
-
-
-//    class InstanceCompare implements Comparator<Instance> {
-//        public int compare(Instance a, Instance b){
-//            if (a.getGoalFunction()< b.getGoalFunction()) return -1;
-//            if (a.getGoalFunction()> b.getGoalFunction()) return 1;
-//            else return 0;
-//        }
-//    }
-
-
 }
