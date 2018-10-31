@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="f9cb0d22-b758-40a6-9261-2e0bde088678" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileMenager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProblemMenager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProblemManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProblemManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProblemManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProjectMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProjectMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ScheduleGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ScheduleGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SolutionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SolutionChecker.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,45 +20,46 @@
     <session id="117192252">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="23" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.10" value="3" />
-          <entry key="project.open.time.11" value="3" />
-          <entry key="project.open.time.12" value="3" />
+          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.12" value="4" />
           <entry key="project.open.time.13" value="2" />
-          <entry key="project.open.time.15" value="2" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.15" value="3" />
           <entry key="project.open.time.16" value="4" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.9" value="3" />
-          <entry key="project.opened" value="25" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="iml" value="1" />
-          <entry key="java" value="15" />
-          <entry key="txt" value="41" />
+          <entry key="iml" value="3" />
+          <entry key="java" value="21" />
+          <entry key="txt" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="IDEA_MODULE" value="1" />
-          <entry key="JAVA" value="15" />
-          <entry key="PLAIN_TEXT" value="41" />
+          <entry key="IDEA_MODULE" value="3" />
+          <entry key="JAVA" value="21" />
+          <entry key="PLAIN_TEXT" value="62" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="96" />
-          <entry key="java" value="7918" />
+          <entry key="java" value="9217" />
           <entry key="txt" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="7918" />
+          <entry key="JAVA" value="9217" />
           <entry key="PLAIN_TEXT" value="113" />
         </counts>
       </usages-collector>
@@ -69,16 +71,7 @@
         <entry file="file://$PROJECT_DIR$/src/ProjectMain.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="119">
-              <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="9" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/Vector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="776" selection-start-line="776" selection-end-line="776" />
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -86,20 +79,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Problem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+            <state relative-caret-position="17">
+              <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ScheduleGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="307">
+              <caret line="35" column="66" lean-forward="true" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -110,32 +104,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Job.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/SolutionChecker.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#298#299#0" expanded="true" />
-              </folding>
+              <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FileManager.java">
+        <entry file="file://$PROJECT_DIR$/src/SolutionChecker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+            <state relative-caret-position="273">
+              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#239#240#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -144,11 +127,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ProblemManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="306">
+              <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
               <folding>
                 <element signature="e#233#234#0" expanded="true" />
                 <element signature="e#297#298#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FileManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="952">
+              <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -170,19 +165,21 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/ProjectManager.java" />
-        <option value="$PROJECT_DIR$/src/Job.java" />
         <option value="$PROJECT_DIR$/Results/sch10_1_2.txt" />
         <option value="$PROJECT_DIR$/src/Instance.java" />
         <option value="$PROJECT_DIR$/src/Schedule.java" />
         <option value="$PROJECT_DIR$/src/problemScheduler.java" />
-        <option value="$PROJECT_DIR$/src/Problem.java" />
         <option value="$PROJECT_DIR$/src/FileMenager.java" />
         <option value="$PROJECT_DIR$/src/ProblemMenager.java" />
-        <option value="$PROJECT_DIR$/src/ProblemManager.java" />
         <option value="$PROJECT_DIR$/ResultsX/sch10_10_2.txt" />
-        <option value="$PROJECT_DIR$/src/ProjectMain.java" />
         <option value="$PROJECT_DIR$/src/FileManager.java" />
+        <option value="$PROJECT_DIR$/Results/sch100_1_4.txt" />
+        <option value="$PROJECT_DIR$/src/Job.java" />
         <option value="$PROJECT_DIR$/src/SolutionChecker.java" />
+        <option value="$PROJECT_DIR$/src/Problem.java" />
+        <option value="$PROJECT_DIR$/src/ProblemManager.java" />
+        <option value="$PROJECT_DIR$/src/ScheduleGenerator.java" />
+        <option value="$PROJECT_DIR$/src/ProjectMain.java" />
       </list>
     </option>
   </component>
@@ -192,7 +189,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -203,7 +200,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,18 +215,24 @@
             <path>
               <item name="PTSZ_projekt1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projekt1" type="462c0819:PsiDirectoryNode" />
+              <item name="Results" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PTSZ_projekt1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projekt1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540964955011" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540993960706" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -298,18 +300,21 @@
       <workItem from="1540923245084" duration="11009000" />
       <workItem from="1540937013817" duration="757000" />
       <workItem from="1540937925130" duration="135000" />
-      <workItem from="1540963381412" duration="1527000" />
+      <workItem from="1540963381412" duration="3070000" />
+      <workItem from="1540978898915" duration="10621000" />
+      <workItem from="1540990864055" duration="669000" />
+      <workItem from="1540991759764" duration="2199000" />
+      <workItem from="1541001120740" duration="1131000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47068000" />
+    <option name="totallyTimeSpent" value="63231000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.102345414" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.45295405" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -318,8 +323,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286334" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.40130153" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40963855" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -356,40 +361,106 @@
     <entry file="file://$PROJECT_DIR$/Results/sch10_9_8.txt" />
     <entry file="file://$PROJECT_DIR$/Results/sch10_10_8.txt" />
     <entry file="file://$PROJECT_DIR$/Results/sch10_1_8.txt" />
-    <entry file="file://$PROJECT_DIR$/Results/sch10_2_2.txt" />
-    <entry file="file://$PROJECT_DIR$/PTSZ_projekt1.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Results/sch10_10_2.txt" />
     <entry file="file://$PROJECT_DIR$/Results/sch1000_3_2.txt" />
     <entry file="file://$PROJECT_DIR$/Results/sch10_2_8.txt" />
     <entry file="file://$PROJECT_DIR$/Kasi/sch10_1_2.txt" />
     <entry file="file://$PROJECT_DIR$/Kasi/sch500_1_2.txt" />
     <entry file="file://$PROJECT_DIR$/src/Instance.java" />
     <entry file="file://$PROJECT_DIR$/Results/sch500_1_2.txt" />
-    <entry file="file://$PROJECT_DIR$/Results/sch10_1_2.txt" />
     <entry file="file://$PROJECT_DIR$/Results/sch10_3_2.txt" />
-    <entry file="file://$PROJECT_DIR$/src/Problem.java">
+    <entry file="file://$PROJECT_DIR$/ResultsX/sch10_10_2.txt" />
+    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/Vector.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+        <state relative-caret-position="12291">
+          <caret line="776" selection-start-line="776" selection-end-line="776" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch10_2_2.txt" />
+    <entry file="file://$PROJECT_DIR$/Results/sch10_10_2.txt" />
+    <entry file="file://$PROJECT_DIR$/Results/sch10_1_2.txt" />
+    <entry file="file://$PROJECT_DIR$/Results/sch100_4_4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PTSZ_projekt1.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch100_2_4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch100_6_4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch100_8_4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch100_9_4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch100_3_4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch500_1_6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch500_2_6.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Results/sch100_1_4.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="60" column="27" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9.0.1/lib/src.zip!/java.base/java/util/Vector.java">
+    <entry file="file://$PROJECT_DIR$/src/SolutionChecker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="776" selection-start-line="776" selection-end-line="776" />
+        <state relative-caret-position="273">
+          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#239#240#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Problem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="22" column="54" selection-start-line="22" selection-start-column="54" selection-end-line="22" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ProblemManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="306">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
           <folding>
             <element signature="e#233#234#0" expanded="true" />
             <element signature="e#297#298#0" expanded="true" />
@@ -400,51 +471,16 @@
     <entry file="file://$PROJECT_DIR$/src/ProjectMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="9" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ResultsX/sch10_10_2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Job.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ScheduleGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="307">
+          <caret line="35" column="66" lean-forward="true" selection-start-line="35" selection-start-column="66" selection-end-line="35" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="89" column="25" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SolutionChecker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#298#299#0" expanded="true" />
           </folding>
         </state>
       </provider>

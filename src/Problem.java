@@ -20,13 +20,16 @@ public class Problem {
         this.d=(int) Math.floor(sumP * h);
     }
 
+    public void setGoalFunction(double goalFunction) {
+        this.goalFunction = goalFunction;
+    }
 
     public void generateSchedule() {
         ScheduleGenerator myScheduler = new ScheduleGenerator(this,h,d);
         myScheduler.makeSchedule();
     }
 
-    public void calculateGoalFunction(int r) {
+    public int calculateGoalFunction(int r) {
         List<Integer> endTimeJob = new ArrayList<>();
         int currentTime = r;
         int result = 0;
@@ -38,7 +41,7 @@ public class Problem {
         for (int i = 0; i < endTimeJob.size(); i++) {
             result += jobList.get(i).getA() * Math.max(d - endTimeJob.get(i), 0) + jobList.get(i).getB() * Math.max(endTimeJob.get(i) - d, 0);
         }
-        goalFunction=result;
+        return result;
     }
 
     private int calculateSumP() {
@@ -50,7 +53,7 @@ public class Problem {
 
     @Override
     public String toString() {
-        return "Funkcja celu " + goalFunction + " h=" + h + " sumP=" + sumP;
+        return "Funkcja celu " + goalFunction + " h=" + h + " d="+d+ " sumP=" + sumP;
     }
 
     public void setR(int r) {
