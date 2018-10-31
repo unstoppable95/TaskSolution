@@ -5,17 +5,10 @@ import java.util.Vector;
 
 public class SolutionChecker {
 
-    private FileMenager meneger = new FileMenager();
+    private FileManager manager = new FileManager();
 
     public List<String> getFiles (String directoryName){
-        List<String> fileNames = new ArrayList<>();
-        File[] files = new File(directoryName).listFiles();
-        for (File file : files) {
-            if (file.isFile()) {
-                fileNames.add(file.getName());
-            }
-        }
-        return fileNames;
+        return manager.getFilesNames(directoryName);
     }
 
     public void checkSolutions(List<String> files){
@@ -25,7 +18,7 @@ public class SolutionChecker {
     }
 
     private void checkSolution(String solutionName){
-        Vector<String[]> content=meneger.readSolutionFromFile(solutionName);
+        Vector<String[]> content=manager.readSolutionFromFile(solutionName);
         double h=Double.parseDouble(content.get(0)[0])/10;
         double goalFunction = Double.parseDouble(content.get(1)[0]);
         int n = Integer.parseInt(content.get(2)[0]);
@@ -37,7 +30,7 @@ public class SolutionChecker {
         Problem p= new Problem(n,h,solutionJobs);
         p.calculateGoalFunction(r);
         double goalFuntionCheck=p.getGoalFunction();
-        if(goalFunction!=goalFuntionCheck) System.out.println("Wyniki w pliku " + solutionName + " się nie zgadzają");
+        if(goalFunction!=goalFuntionCheck) System.out.println("Wyniki w pliku " + solutionName.split("/")[1] + " się nie zgadzają");
     }
 
 }

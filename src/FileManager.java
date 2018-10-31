@@ -1,9 +1,10 @@
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 import java.util.Vector;
 
-public  class FileMenager {
+public  class FileManager {
 
     public ArrayList<Problem> loadProblemData(String fileName,double h){
         ArrayList<Problem> listProblems=new ArrayList<>();
@@ -31,16 +32,16 @@ public  class FileMenager {
     }
 
 
-    public  void saveInstance(String n,String k,String h,int F,Problem b,String r){
+    public  void saveInstance(String n,String k,String h,int F,Problem b,String r,String directory){
         try{
-            File dir = new java.io.File("Results");
+            File dir = new java.io.File(directory);
             dir.mkdir();
         }
-        catch (Exception ex){
-            ex.printStackTrace();
+        catch (SecurityException ex){
+            System.out.println("Brak uprawnień do utworzenia folderu " + directory);
         }
 
-        String nameInstance="Results/sch"+n+"_"+k+"_"+h+".txt";
+        String nameInstance=directory+"/sch"+n+"_"+k+"_"+h+".txt";
         try {
             File file = new File(nameInstance);
             file.createNewFile();
@@ -65,17 +66,28 @@ public  class FileMenager {
         }
     }
 
-    public Vector<String[]> readSolutionFromFile(String fileName){
+    public Vector<String[]> readSolutionFromFile(String fileNameFull){
         Vector<String []> fileContent = new Vector<>();
-        try (BufferedReader br = new BufferedReader(new FileReader("Results/"+fileName))) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileNameFull))) {
             String currentLine;
             while ((currentLine = br.readLine()) != null) {
                 fileContent.add(currentLine.trim().split("\t"));
             }
         } catch (IOException e) {
-            System.out.println("Wystapił błąd z odczytem rozwiązania "  +fileName);
+            System.out.println("Wystapił błąd z odczytem rozwiązania "  +fileNameFull);
         }
         return fileContent;
+    }
+
+    public List<String> getFilesNames(String directoryName){
+        List<String> fileNames = new ArrayList<>();
+        File[] files = new File(directoryName).listFiles();
+        for (File file : files) {
+            if (file.isFile()) {
+                fileNames.add(directoryName+"/"+file.getName());
+            }
+        }
+        return fileNames;
     }
 
 }

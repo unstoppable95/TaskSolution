@@ -3,14 +3,15 @@
 public class ProjectMain {
 
     public static void main(String[] args){
+        String dirForOutputFiles="Results";
 
-        ProblemMenager problems = new ProblemMenager();
+        ProblemManager problems = new ProblemManager();
         problems.readFromFile("sch10.txt",0.2);
-        problems.generateSchedulesForFile();
+        problems.generateSchedulesForFile(dirForOutputFiles);
 
 
         SolutionChecker sol = new SolutionChecker();
-        sol.checkSolutions(sol.getFiles("Results"));
+        sol.checkSolutions(sol.getFiles(dirForOutputFiles));
 
     }
 }
